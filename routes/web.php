@@ -19,3 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('municipalities', 'ProjectController@getMunicipalities');
+Route::post('barangays', 'ProjectController@generateBarangays');
+Route::post('data', 'ProjectController@generateData');
+Route::post('chart', 'ProjectController@generateChart');
+
